@@ -7,20 +7,98 @@
     
 }
 
+@font-face{
+
+    font-family: 'GothaProBold';
+    src: url('../fonts/GOTHAPROMED.OTF') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+header{
+    height: 100vh;
+    background-color: aqua;
+    background-image: url('../img/layout.jpg');
+    background-position-y: 1%;
+    background-repeat: no-repeat;
+}
+
 h1{
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
     line-height: 25px;
-    font-family: GothaPro;
+    font-family: GothaProBold;
     margin-top: 40px;
     margin-bottom: 50px;
 }    
+
+h1 span{
+    color: #820807;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: GothaProBold;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
 
 .clock-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.condition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cond-img{
+    display: block;
+    height: 250px;
+    width: 800px;
+    background-color: aqua;
+    background-image: url('../img/layout.jpg');
+    background-position-y: 24%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+.cond-rules{
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    width: 840px;
+    border-bottom: 2px solid #820807;
+    font-family: GothaPro;
+    font-size: 20px;
+}
+.rule1{
+    display: block;
+    width: 41%;
+    text-align: center;
+    padding: 20px 0;
+}
+.rule-between{
+    display: block;
+    width: 24%;
+}
+.rule2{
+    display: block;
+    width: 35%;
+    text-align: center;
+    padding: 20px 0;
 }
 
 @media only screen and (max-width: 640px) {

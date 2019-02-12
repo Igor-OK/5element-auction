@@ -11,13 +11,35 @@
     <title>Спеши урвать всего за 5!</title>
 </head>
 <body>
-    <h1>Учавствуй в рекламном мероприятии и получай товары </br> всего <span>за 5 рублей</span>!</h1>
 
-    <div class="clock-wrapper">
-        <div class="clock"></div>
-    </div>
-    
-    <div class="message"></div>
+    <header>
+
+    </header>
+    <main>
+        <h1>Учавствуй в рекламном мероприятии и получай товары </br> всего <span>за 5 рублей</span>!</h1>
+
+        <div class="condition">
+            <div class="cond-img"></div>
+            <div class="cond-rules">
+                <div class="rule1">
+                    Подайе заявку на<br> понравившийся товар из списка.<br> У Вас есть шанс всего<br> на <strong>1 товар</strong> в неделю.
+                </div>
+                <div class="rule-between"></div>
+                <div class="rule2">
+                    Победитель определится<br> <span><strong>23 февраля</strong></span> .<br> В случае выйгрыша<br> получите товар за <strong>5 рублей</strong>!
+                </div>
+            </div>
+        </div>
+
+        <h2>До конца розыгрыша осталось:</h2>
+
+        <div class="clock-wrapper">
+            <div class="clock"></div>
+        </div>
+        
+        <div class="message"></div>
+    </main>
+
 
 
     <script type="text/javascript">
@@ -39,7 +61,6 @@
 
             var date = new Date(2019, 01, 23, 12).getTime()/1000; // input of finish date
             var now = new Date().getTime()/1000;
-            console.log(date);
 				    
 		    clock.setTime(date-now);
 		    clock.setCountdown(true);
