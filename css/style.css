@@ -1,0 +1,40 @@
+@font-face{
+
+    font-family: 'GothaPro';
+    src: url('../fonts/GOTHAPROLIG.OTF') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: GothaPro;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}    
+
+.clock-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 640px) {
+    .flip-clock-wrapper {
+        zoom: 0.5;
+        -moz-transform: scale(0.5)
+        /* transform: scale(0.5); */
+      /* transform: scale(0.4); */
+      /* width: 640px; */
+    }
+}
+/* @media only screen and (max-width: 360px) {
+    .flip-clock-wrapper {
+      transform: scale(0.7) translateX(-300px);
+      width: 400px;
+    }
+} */
