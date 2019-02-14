@@ -1,28 +1,20 @@
 @font-face{
-
     font-family: 'GothaPro';
     src: url('../fonts/GOTHAPROLIG.OTF') format("opentype");
     font-weight: normal;
     font-style: normal;
-    
 }
-
 @font-face{
-
     font-family: 'GothaProReg';
     src: url('../fonts/GOTHAPROREG.OTF') format("opentype");
     font-weight: normal;
-    font-style: normal;
-    
+    font-style: normal; 
 }
-
 @font-face{
-
     font-family: 'GothaProBold';
     src: url('../fonts/GOTHAPROMED.OTF') format("opentype");
     font-weight: normal;
     font-style: normal;
-    
 }
 
 
@@ -41,11 +33,11 @@ header{
 h1{
     text-align: center;
     text-transform: uppercase;
-    font-size: 26px;
-    line-height: 25px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     font-family: GothaProBold;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
 }    
 
 h1 span{
@@ -154,66 +146,52 @@ h2{
     justify-content: center;
     align-items: center;
     border-radius: 90px;
-    background-color: white;
     border: 3px solid rgb(197, 197, 197);
+}
+.white-circle{
+    height: 160px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
 }
 .round-container img{
     /* height: 100px; */
     /* width: 100%; */
 }
 
-.item-description{
-    width: 35%;
+.item-desc{
+    width: 75%;
+    position: relative;
 }
-.item-description .header{
-    height: 50%;
+.item-desc .header{
     padding-top: 1rem;
     padding-left: 1rem;
+    width: 15rem;
     box-sizing: border-box;
+    position: absolute;
+    top: 1rem;
 }
-.item-description h3{
+.item-desc h3{
     font-size: 17px;
     line-height: 20px;
     font-family: GothaProReg;
-}
-.item-description .prices{
-    height: 50%;
-    display: flex;
-    flex-direction: row;
-}
-.item-description .new-price{
-    width: 55%;
-    font-size: 3rem;
-    font-family: GothaProBold;
-    color: rgb(22, 22, 22);
-    padding-top: 1.8rem;
-    padding-left: 0.8rem;
-}
-.item-description .new-price sup{
-    font-size: 1rem;
-}
-.item-description .new-price span{
-    font-size: 1rem;
-    display: inline-block;
-    transform: translateX(-38px);
+    margin-top:0;
 }
 
-.item-space{
-    width: 10%;
-}
 
-.item-btn{
-    width: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.item-desc .item-btn{
+    position: absolute;
+    right: 3rem;
+    top: 4.5rem;
 }
-.item-btn .reg-button{
+.item-desc .item-btn .reg-button{
     height: 3rem;
     border: 1px solid #820807;
     border-radius: 1.5rem;
-    width: 80%;
+    width: 15rem;
     background-color: #C80000;
     cursor: pointer;
     text-align: center;
@@ -226,16 +204,36 @@ h2{
     justify-content: center;
     transition: background-color 0.2s ease-in;
 }
-.item-btn .reg-button:hover{
+.item-desc .item-btn .reg-button:hover{
     background-color: #820807;
 }
-.item-btn .reg-already{
-    width: 50%;
-    text-align: right;
+.item-desc .item-btn .reg-already{
     margin-top: 0.5rem;
+    margin-left: 6rem;
     font-size: 0.8rem;
     font-family: GothaProReg;
 }
+
+.item-desc .new-price{
+    position: absolute;
+    top: 6rem;
+    font-size: 3rem;
+    font-family: GothaProBold;
+    color: rgb(22, 22, 22);
+    padding-top: 1.8rem;
+    padding-left: 0.8rem;
+}
+.item-desc .new-price sup{
+    font-size: 1rem;
+}
+.item-desc .new-price span{
+    font-size: 1rem;
+    display: inline-block;
+    transform: translateX(-38px);
+}
+
+
+
 
 .footer-img{
     height: 220px;
@@ -293,12 +291,82 @@ footer .footer-rules.active{
 
 
 @media only screen and (max-width: 640px) {
+    header{
+        height: 40vh;
+        /* background-image: url('../img/header.jpg');
+        background-repeat: no-repeat; */
+        background-size: 100%;
+    }
+    h1{
+
+        font-size: 1rem;
+        line-height: 1.55rem;
+        padding: 0 1rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }  
+    main{
+        overflow: hidden;
+    }
+    .cond-img{
+        width: 12rem;
+        height: 12rem;
+        background-position-x: left;
+        background-size: cover;
+    }
+    .cond-rules{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        align-items: center;
+    }
+    .rule1, .rule2{
+        width: auto;
+    }
+    .rule-between{
+        background-image: url(../img/condition.jpg);
+        width: 12rem;
+        height: 12rem;
+        background-position-x: right;
+        background-size: cover;
+    }
     .flip-clock-wrapper {
         zoom: 0.5;
         -moz-transform: scale(0.5)
         /* transform: scale(0.5); */
       /* transform: scale(0.4); */
       /* width: 640px; */
+    }
+    .item{
+        display: flex;
+        flex-direction: row;
+        height: 10rem;
+        width: 90%;
+        border: 3px solid rgb(197, 197, 197);
+        margin-top: 3rem;
+        border-radius: 5rem;
+    }
+    .item-img{
+        width: 10rem;
+        height: 10rem;
+    }
+    .round-container{
+        height: 9rem;
+        width: 9rem;
+        border-radius: 4.5rem;
+    }
+    .white-circle{
+        height: 8.5rem;
+        width: 8.5rem;
+        border-radius: 50%;
+    }
+
+    .item-desc{
+        width: calc(100% - 11rem);
+    }
+
+    footer .footer-rules{
+        width: 75%;
     }
 }
 /* @media only screen and (max-width: 360px) {
