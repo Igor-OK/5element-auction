@@ -364,11 +364,82 @@ footer .footer-rules.active{
     .item-desc{
         width: calc(100% - 11rem);
     }
+    .item-desc .item-btn{
+        right: auto;
+        left: 1rem;
+        top: 5rem;
+    }
+    .item-desc .new-price{
+        display: none;
+    }
 
     footer .footer-rules{
         width: 75%;
     }
+    footer .footer-rules.active{
+        width: 80%;
+    }
+    footer .footer-rules .rules{
+        width: 90%;
+    }
 }
+
+@media only screen and (max-width: 500px) {
+    .item{
+        height: 8rem;
+        border: 2px solid rgb(197, 197, 197);
+        margin-top: 2rem;
+        border-radius: 4rem;
+    }
+    .item-img{
+        width: 8rem;
+        height: 8rem;
+    }
+    .round-container{
+        height: 7.5rem;
+        width: 7.5rem;
+        border-radius: 3.75rem;
+        border: 2px solid rgb(197, 197, 197);
+    }
+    .white-circle{
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+    }
+
+    .item-desc{
+        width: calc(100% - 8rem);
+    }
+    .item-desc .header{
+        top: 0;
+        padding-left: 0.3rem;
+        padding-top: 0.7rem;
+        width: 85%
+    }
+    .item-desc h3{
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+    .item-desc .item-btn{
+        right: auto;
+        left: 0.3rem;
+        top: 4.5rem;
+        width: 90%;
+    }
+    .item-desc .item-btn .reg-button{
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+
+    }
+    .item-desc .item-btn .reg-already{
+        margin-left: 3rem;
+    }
+    .round-container img{
+        height: 135%;
+    }
+}
+
 /* @media only screen and (max-width: 360px) {
     .flip-clock-wrapper {
       transform: scale(0.7) translateX(-300px);

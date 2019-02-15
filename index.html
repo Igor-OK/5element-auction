@@ -69,7 +69,7 @@
                         <h3>Внешний аккумулятор Bluetimes LP-1008AC</h3>
                     </div>
                     <div class="item-btn">
-                        <div class="reg-button">
+                        <div class="reg-button" data-item-id="111111" data-snatch-id="555555">
                             Купить за 5 руб.
                         </div>
                         <div class="reg-already">
@@ -82,19 +82,72 @@
                 </div>
             </div>
 
-
-            <!-- <div class="item">
+            <div class="item">
                 <div class="item-img">
                     <div class="round-container">
-                        <img src="./img/1.png" alt="description">
+                        <div class="white-circle">
+                            <img src="./img/2.png" alt="description">
+                        </div>
                     </div>
                 </div>
                 <div class="item-desc">
                     <div class="header">
-                        <h3>Внешний аккумулятор Bluetimes LP-1008AC</h3>
+                        <h3>Смартфон HUAWEI P SMART 2019</h3>
                     </div>
                     <div class="item-btn">
-                        <div class="reg-button">
+                        <div class="reg-button" data-item-id="111111" data-snatch-id="555555">
+                            Купить за 5 руб.
+                        </div>
+                        <div class="reg-already">
+                            275 заявок
+                        </div>
+                    </div> 
+                    <div class="new-price">
+                        5<sup>00</sup> <span>. руб.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <div class="round-container">
+                        <div class="white-circle">
+                            <img src="./img/3.png" alt="description">
+                        </div>
+                    </div>
+                </div>
+                <div class="item-desc">
+                    <div class="header">
+                        <h3>Чайник REDMOND RK-G213S SKYKETTLE</h3>
+                    </div>
+                    <div class="item-btn">
+                        <div class="reg-button" data-item-id="111111" data-snatch-id="555555">
+                            Купить за 5 руб.
+                        </div>
+                        <div class="reg-already">
+                            275 заявок
+                        </div>
+                    </div> 
+                    <div class="new-price">
+                        5<sup>00</sup> <span>. руб.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <div class="round-container">
+                        <div class="white-circle">
+                            <img src="./img/4.png" alt="description">
+                        </div>
+                    </div>
+                </div>
+                <div class="item-desc">
+                    <div class="header">
+                        <h3>Утюг PHILIPS GC2146-40</h3>
+                    </div>
+                    <div class="item-btn">
+                        <div class="reg-button" data-item-id="111111" data-snatch-id="555555">
                             Купить за 5 руб.
                         </div>
                         <div class="reg-already">
@@ -108,88 +161,10 @@
             </div>
 
 
-            <div class="item">
-                <div class="item-img">
-                    <div class="round-container">
-                        <img src="./img/1.png" alt="description">
-                    </div>
-                </div>
-                <div class="item-description">
-                    <div class="header">
-                        <h3>Внешний аккумулятор Bluetimes LP-1008AC</h3>
-                    </div>
-                    <div class="prices">
-                        <div class="new-price">
-                            5<sup>00</sup> <span>. руб.</span>
-                        </div> 
-                    </div>  
-                </div>
-                <div class="item-space"></div>
-                <div class="item-btn">
-                    <div class="reg-button">
-                        Купить за 5 руб.
-                    </div>
-                    <div class="reg-already">
-                        275 заявок
-                    </div>
-                </div>
-            </div>
+            <!-- 
 
 
-            <div class="item">
-                <div class="item-img">
-                    <div class="round-container">
-                        <img src="./img/2.png" alt="description">
-                    </div>
-                </div>
-                <div class="item-description">
-                    <div class="header">
-                        <h3>Смартфон HUAWEI P SMART 2019</h3>
-                    </div>
-                    <div class="prices">
-                        <div class="new-price">
-                            5<sup>00</sup> <span>. руб.</span>
-                        </div> 
-                    </div>  
-                </div>
-                <div class="item-space"></div>
-                <div class="item-btn">
-                    <div class="reg-button">
-                        Купить за 5 руб.
-                    </div>
-                    <div class="reg-already">
-                        275 заявок
-                    </div>
-                </div>
-            </div>
 
-
-            <div class="item">
-                <div class="item-img">
-                    <div class="round-container">
-                        <img src="./img/3.png" alt="description">
-                    </div>
-                </div>
-                <div class="item-description">
-                    <div class="header">
-                        <h3>Чайник REDMOND RK-G213S SKYKETTLE</h3>
-                    </div>
-                    <div class="prices">
-                        <div class="new-price">
-                            5<sup>00</sup> <span>. руб.</span>
-                        </div> 
-                    </div>  
-                </div>
-                <div class="item-space"></div>
-                <div class="item-btn">
-                    <div class="reg-button">
-                        Купить за 5 руб.
-                    </div>
-                    <div class="reg-already">
-                        275 заявок
-                    </div>
-                </div>
-            </div>
 
 
 
@@ -446,8 +421,6 @@
 
 
             var btn = document.querySelector('.footer-rules');
-
-            console.log(btn);
             function wideRules(){
                 if (btn.classList.contains('active')){
                     btn.classList.remove('active');
@@ -456,7 +429,17 @@
                 }
             }
 
-            btn.addEventListener('click', wideRules, false)  ;  
+            btn.addEventListener('click', wideRules, false); 
+
+
+            function registration(e){
+                console.log(e.target);
+            } 
+
+
+            var items = document.querySelector('.promo-items');
+            items.addEventListener('click', registration, false);
+
 
 
 		});
