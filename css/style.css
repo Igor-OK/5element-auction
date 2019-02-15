@@ -99,6 +99,15 @@ h2{
     text-align: center;
     padding: 20px 0;
 }
+.rule2 .date{
+    color: red;
+}
+.rule2 .light{
+    color: grey;
+}
+.rule2 .price{
+    color: #black;
+}
 .mid-img{
     height: 220px;
     position: relative;
@@ -285,9 +294,102 @@ footer .footer-rules.active{
     width: 800px;
 }
 
-/* footer .footer-rules:hover{
-    height: 100px;
-} */
+/*.black-glass{*/
+    /*position: fixed;*/
+    /*z-index: 2000;*/
+    /*background-color: black;*/
+    /*opacity: 0.2;*/
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+    /*pointer-events: none;*/
+    /*top: 0;*/
+    /*left: 0;*/
+/*}*/
+
+.popup{
+    position: fixed;
+    width:350px;
+    height: 500px;
+    background-color: #C20000;
+    border: 2px solid #F2CD0F;
+    border-radius: 10px;
+    padding: 2rem;
+    top:calc(50% - 250px);
+    left: calc(50% - 175px);
+    z-index: 2500;
+    box-sizing: border-box;
+}
+.popup h3{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-family: GothaProReg;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.popup input{
+    width: 100%;
+    height: 2rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    margin-top: 1.5rem;
+}
+.popup input#agree-checkbox{
+    width: auto;
+    display: inline-block;
+}
+.popup .above-text{
+    color: white;
+    text-align: center;
+    font-family: GothaPro;
+    margin: 0;
+}
+.popup .about-phone{
+    color: white;
+    text-align: center;
+    font-family: GothaPro;
+    font-size: 0.7rem;
+    /* margin: 0; */
+}
+.popup label{
+    display: inline-block;
+    font-family: GothaPro;
+    color: white;
+    font-size: 0.7rem;
+    width: 80%;
+}
+.popup .button{
+    height: 2.2rem;
+    width: 60%;
+    border: 1px solid #820807;
+    border-radius: 1.1rem;
+    background-color:  hsl(50, 86%, 46%);
+    margin-top: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    font-family: GothaProBold;
+    color: #820807;
+    text-align: center;
+    padding-top:0.6rem;
+    text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.popup .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: GothaPro;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
 
 
 @media only screen and (max-width: 640px) {
